@@ -1,0 +1,24 @@
+{
+  "name": "SpringBoot Training Environment",
+
+  "dockerComposeFile": "docker-compose.yml",
+
+  "service": "app",
+
+  "workspaceFolder": "/workspace",
+
+  "forwardPorts": [8080],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-spring-boot",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.vscode-json"
+      ]
+    }
+  },
+
+  "postCreateCommand": "cd backend && mvn clean install"
+}
