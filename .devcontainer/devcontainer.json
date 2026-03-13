@@ -1,11 +1,9 @@
 {
   "name": "springboot-training",
 
-  "dockerComposeFile": "docker-compose.yml",
-
-  "service": "app",
-
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
 
   "forwardPorts": [8080],
 
@@ -15,10 +13,8 @@
         "vscjava.vscode-java-pack",
         "vmware.vscode-spring-boot",
         "ms-azuretools.vscode-docker",
-        "ms-vscode.vscode-json"
+        "humao.rest-client"
       ]
     }
-  },
-
-  "postCreateCommand": "cd backend && ./mvnw clean install"
+  }
 }
