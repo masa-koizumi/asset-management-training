@@ -1,11 +1,11 @@
 {
-  "name": "SpringBoot Training Environment",
+  "name": "springboot-training",
 
   "dockerComposeFile": "docker-compose.yml",
 
   "service": "app",
 
-  "workspaceFolder": "/workspace",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
   "forwardPorts": [8080],
 
@@ -20,5 +20,5 @@
     }
   },
 
-  "postCreateCommand": "cd backend && mvn clean install"
+  "postCreateCommand": "cd backend && ./mvnw clean install"
 }
