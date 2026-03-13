@@ -1,6 +1,5 @@
 # asset-management-training
 
-
 研修用サンプルシステム
 
 ## 起動方法
@@ -13,7 +12,7 @@ cd backend
 
 3 SpringBoot起動
 
-mvn spring-boot:run
+./mvnw spring-boot:run
 
 4 API確認
 
